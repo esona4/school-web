@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>Vista%High%Application.com/</title>
+            <style>
+                body{
+                    margin: 0;
+                    background-color: rgb(136, 154, 255);
+                }
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #333;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                }
+
+                li {
+                    float: right;
+                }
+
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                li a:hover {
+                    background-color: rgb(40, 140, 255);
+                }
+                
+                #body {
+                    margin-top: 3.5cm;
+                    margin-bottom: 7.28cm;
+                }
+                /*form qala apha sran*/
+                .fname {
+            height: 0.8cm;
+            padding-left: 1.2%;
+            width: 63%;
+        }
+                
+        .DOB {
+            height: 0.8cm;
+            margin-top: 0.2cm;
+            padding-left: 1.2%;
+            width: 63%;
+        }
+        .adultname {
+            height: 0.8cm;
+            margin-top: 0.2cm;
+            padding-left: 1.2%;
+            width: 63%;
+            }
+            .Adress {
+            height: 0.8cm;
+            margin-top: 0.2cm;
+            padding-left: 1.2%;
+            width: 45.5%;
+        }
+        .code {
+            height: 0.8cm;
+            margin-top: 0.2cm;
+            padding-left: 1.2%;
+            width: 7%;
+        }
+        .contact {
+            height: 0.8cm;
+            margin-top: 0.2cm;
+            padding-left: 1.2%;
+            width: 16.8%;
+        }
+        .email {
+            height: 0.8cm;
+            margin-top: 0.2cm;
+            padding-left: 1.2%;
+            width: 63%;
+        }
+    .fundephi {
+            height: 0.8cm;
+            margin-top: 0.2cm;
+            padding-left: 1.2%;
+            width: 63%;
+        }
+        /*phela apha*/
+        #body {
+            padding-left: 0.1cm;
+        }
+        /*ok qala here*/
+        .container-1 
+                {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container-1 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 2;}
+
+ .container-1 img {
+      -webkit-animation: image-slide 4s cubic-bezier(.5,.5,0,1);
+      animation: image-slide 4s cubic-bezier(.5,.5,0,1);
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards;
+      -webkit-filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
+      filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
+      height: 100%;
+  }
+
+
+
+.text-container-1 {
+    position: relative;
+    top: 50%;
+    left: 40%;
+    -webkit-transform: translate(-40%,-50%);
+    transform: translate(-40%,-50%);
+    z-index: 1;
+}
+ .container-1 h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: sans-serif;
+  }
+  
+  .fading-effect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    -webkit-animation: text-slide 4s cubic-bezier(.5,.5,0,1);
+    animation: text-slide 4s cubic-bezier(.5,.5,0,1);
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+  @keyframes image-slide {
+    0% {
+      transform: translatex(-250px) scale(0);
+    }
+    60% {
+      transform: translatex(-250px) scale(1);
+    }
+    90% {
+      transform: translatex(150px) scale(1);
+    }
+    100% {
+      transform: translatex(150px) scale(1);
+    }  
+ }
+ 
+ @keyframes text-slide {
+     0% {
+       width: 100%;
+     }
+     60% {
+       width: 100%;
+     }
+     75%{
+       width: 0;
+     }
+     100% {
+       width: 0;
+     }
+ }
+#about {
+    margin-top: 3.5cm;
+}
+
+        /*ends here*/
+           </style>
+    </head>
+<body>
+    <ul>
+       <li><a href="index.html" class="active">Home</a></li>
+       <li><a href="Vista_HighApplication.html">Applicaton</a></li> 
+       <li><a href="Vista_HighAbout.html">About</a></li>  <h1 style="color: white;">Vista High School</h1>
+     </ul>
+
+    <section id="about">
+        <div class="container-1"> 
+      
+            <div class="image-container-1">
+
+            </div>
+            
+            <div class="text-container-1">
+
+                <div id="body">
+                    <form>
+                        <label for="name"></label>Legal Full Name of Applicant:<br><input type="text" name="name" placeholder="Esona Phil'uLife Gilikidi" class="fname"> 
+                         <select name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <br><br>
+                        <label for="name"></label>Date of Birth:<br><input type="text" name="name" placeholder="200/08/17" class="DOB">
+                        <br><br>
+                        <label for="name"></label>Legal Full Name of Parent/Guardian: <br><input type="text" name="name" placeholder="Phumeza Sylvia Gilikidi" class="adultname">
+                        <br><br>
+                        <label for="name"></label>Home Adress of Parent/Guadian: <br><input type="text" name="Adress" placeholder="49 S.Mabizela Cr, Mandela Park, Khayelithsa" class="Adress">  <label for="name"></label>Postal Code <input type="text" name="name" placeholder="7784" class="code">
+                        <br><br>
+                        <label for="name"></label>Contact Details: <input type="text" name="name" placeholder="072 173 0994" class="contact">
+                        <label for="name"></label>Alternate Contact Detail: <input type="text" name="name" placeholder="076 323 2038" class="contact">
+                        <br><br>
+                        <label for="name"></label>Email: <br><input type="text" name="name" placeholder="gilikidiesona4@gmail.com" class="email">
+            
+                    </form>
+                                    <hr>
+                                    <br>
+                    <form>
+                        <label for="name">Child currently in school?</label>
+                            <select name="question">
+                                <option value="agree">Yes</option>
+                                <option value="oppose">No</option>
+                            </select>
+                            <br>
+                        <label for="statement">If schooling, provide's name and current standard: <br></label><input type="text" name="statement" placeholder="Currently in standard A, at BCD Primary School" class="fundephi">
+                        <br><br>
+                        <label for="statement">Any health conditions?</label>
+                        <select name="question">
+                            <option value="agree">Yes</option>
+                            <option value="oppose">No</option>
+                        </select><br>
+                        <label for="statement">If yes, please do provide the health problem: <br></label><input type="text" name="statement" placeholder="yerre got sinus during 29 degrees days" class="fundephi">
+                        <br><br>
+                        <message>Any comments: </message><br><textarea style="width: 63%;"></textarea>
+                    </form>
+                    <button style="margin-left: 6.3cm;">Apply</button>
+                </div>
+            -->
+                <hr width="67%%" style="margin-top: 5%;">
+              <div class="fading-effect"></div>
+            </div>
+          </div>
+          </section>
+
+<!---
+    <div id="body">
+        <form>
+            <label for="name"></label>Legal Full Name of Applicant:<br><input type="text" name="name" placeholder="Esona Phil'uLife Gilikidi" class="fname"> 
+             <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br><br>
+            <label for="name"></label>Date of Birth:<br><input type="text" name="name" placeholder="200/08/17" class="DOB">
+            <br><br>
+            <label for="name"></label>Legal Full Name of Parent/Guardian: <br><input type="text" name="name" placeholder="Phumeza Sylvia Gilikidi" class="adultname">
+            <br><br>
+            <label for="name"></label>Home Adress of Parent/Guadian: <br><input type="text" name="Adress" placeholder="49 S.Mabizela Cr, Mandela Park, Khayelithsa" class="Adress">  <label for="name"></label>Postal Code <input type="text" name="name" placeholder="7784" class="code">
+            <br><br>
+            <label for="name"></label>Contact Details: <input type="text" name="name" placeholder="072 173 0994" class="contact">
+            <label for="name"></label>Alternate Contact Detail: <input type="text" name="name" placeholder="076 323 2038" class="contact">
+            <br><br>
+            <label for="name"></label>Email: <br><input type="text" name="name" placeholder="gilikidiesona4@gmail.com" class="email">
+
+        </form>
+                        <hr>
+                        <br>
+        <form>
+            <label for="name">Child currently in school?</label>
+                <select name="question">
+                    <option value="agree">Yes</option>
+                    <option value="oppose">No</option>
+                </select>
+                <br>
+            <label for="statement">If schooling, provide's name and current standard: <br></label><input type="text" name="statement" placeholder="Currently in standard A, at BCD Primary School" class="fundephi">
+            <br><br>
+            <label for="statement">Any health conditions?</label>
+            <select name="question">
+                <option value="agree">Yes</option>
+                <option value="oppose">No</option>
+            </select><br>
+            <label for="statement">If yes, please do provide the health problem: <br></label><input type="text" name="statement" placeholder="yerre got sinus during 29 degrees days" class="fundephi">
+            <br><br>
+            <message>Any comments: </message><br><textarea style="width: 63%;"></textarea>
+        </form>
+        <button style="margin-left: 6.3cm;">Apply</button>
+    </div>
+-->
+</body>
+</html>

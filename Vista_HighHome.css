@@ -1,0 +1,81 @@
+
+body {
+    margin:0;
+    background-image: url('Vista-view.jpg');
+    background-size: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(40, 140, 255);
+}
+#body {
+  margin-top: 3.5cm;
+  text-align: center;
+  margin-bottom: 7.28cm;
+}
+.p {
+  color: white;
+  font-size: xx-large;
+  font-family:sans-serif;
+}
+.bottom-info{
+  background-color: rgb(136, 154, 255);
+  padding-bottom: 5.5%;
+  font-size: larger;
+}
+.line-1 {
+  text-align: end;
+  padding-right: 2%;
+  color: white;
+  padding-top: 1%;
+
+
+
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+ 
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(8, 8, 8, 0.75);}
+to{border-right-color: transparent;}
+}
+

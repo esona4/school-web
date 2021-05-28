@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Vista%High%About.com/</title>
+            <style>
+                body{
+                    margin: 0;
+                    background-color: rgb(136, 154, 255);
+                }  
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #333;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                }
+
+                li {
+                    float: right;
+                }
+
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                li a:hover {
+                    background-color: rgb(40, 140, 255);
+                }
+                #body {
+                    margin-top: 3.5cm;
+                    margin-bottom: 7.28cm;
+                }
+                .body{
+                    margin-top: 20%;
+                }
+                
+                
+                
+                .container-1 
+                {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container-1 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 2;}
+
+ .container-1 img {
+      -webkit-animation: image-slide 4s cubic-bezier(.5,.5,0,1);
+      animation: image-slide 4s cubic-bezier(.5,.5,0,1);
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards;
+      -webkit-filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
+      filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
+      height: 100%;
+  }
+
+
+
+.text-container-1 {
+    position: relative;
+    top: 50%;
+    left: 40%;
+    -webkit-transform: translate(-40%,-50%);
+    transform: translate(-40%,-50%);
+    z-index: 1;
+}
+ .container-1 h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: sans-serif;
+  }
+  
+  .fading-effect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    -webkit-animation: text-slide 4s cubic-bezier(.5,.5,0,1);
+    animation: text-slide 4s cubic-bezier(.5,.5,0,1);
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+  @keyframes image-slide {
+    0% {
+      transform: translatex(-250px) scale(0);
+    }
+    60% {
+      transform: translatex(-250px) scale(1);
+    }
+    90% {
+      transform: translatex(150px) scale(1);
+    }
+    100% {
+      transform: translatex(150px) scale(1);
+    }  
+ }
+ 
+ @keyframes text-slide {
+     0% {
+       width: 100%;
+     }
+     60% {
+       width: 100%;
+     }
+     75%{
+       width: 0;
+     }
+     100% {
+       width: 0;
+     }
+ }
+
+            </style>
+        </head>
+
+        <body>
+          <ul>
+             <li><a href="index.html" class="active">Home</a></li>
+             <li><a href="Vista_HighApplication.html">Applicaton</a></li> 
+             <li><a href="Vista_HighAbout.html">About</a></li>  <h1 style="color: white;">Vista High School</h1>
+           </ul>
+     
+            <section id="about">
+                <div class="container-1"> 
+              
+                    <div class="image-container-1">
+                    <img src="Vista-dp.jpg" alt="kids">
+                    </div>
+                    
+                    <div class="text-container-1">
+                        <h3>Vista High Secondary School</h3>
+                        <p>Vista High Secondary School is a public School located within the City of Cape Town District Military Rd,<br> Schotsche Kloof. The school falls in Cape Town Metropolitan Municipality, METRO CENTRAL and is a Q5.</p>
+                        <p>The purpose of the school is to advance the the basic education the applicants already carry. Teaching, showing and <br>sharing them techniques to counter act future unexpects. The school's sub-objective is to help stimulate<br> <b>problem-solving skills</b>, and doing so the school issues a number of study subjects which are classified to 2 different<br> and are known as <u>science & buiness</u>. <br>Availbale subjects: Business, Physics, Life Science, Geography, Mathematics, IsiXhosa HL and English HL. As such,<br> Vista High is  part of an education intervention that aims to redress the Apartheid education system.</p>
+                        <hr width="67%%" style="margin-top: 5%;">
+                      <div class="fading-effect"></div>
+                    </div>
+                  </div>
+                  </section>
+            <!---
+            <div class="body">
+                <div id="body">
+                    
+                </div>
+            </div>
+        -->
+        </body>
+    </html> 
